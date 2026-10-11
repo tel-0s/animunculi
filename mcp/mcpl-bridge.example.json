@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "animunculi": {
+      "transport": {
+        "command": "uv",
+        "args": ["run", "--directory", "<path-to-animunculi>/mcp", "animunculi-mcpl"],
+        "env": { "ANIMUNCULI_TTS": "none" }
+      },
+      "grant": [
+        "tools",
+        "pushEvents",
+        "inferenceLifecycle",
+        "channels.register",
+        "channels.lifecycle",
+        "channels.incoming",
+        "channels.publish",
+        "contextHooks.beforeInference.inject.beforeUser"
+      ],
+      "enableFeatureSets": ["skyrim.*"],
+      "inferenceRequest": "deny",
+      "wake": "chat",
+      "openChannels": ["skyrim:default"]
+    }
+  }
+}
