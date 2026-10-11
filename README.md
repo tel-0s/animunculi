@@ -59,3 +59,8 @@ settings go in a git-ignored `build.local.ps1`; copy
 [build.local.example.ps1](build.local.example.ps1) to start.
 
 The MCP server alone needs only Python and uv: see [mcp/README.md](mcp/README.md).
+
+## License
+
+MIT; see [LICENSE](LICENSE). The vendored SKSE Menu Framework header is MIT as well (notice in
+[extern/README.md](extern/README.md)).
